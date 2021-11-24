@@ -21,7 +21,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.eventyay.attendee"
-        minSdkVersion 21
+        minSdkVersion 28
         targetSdkVersion 28
         versionCode 17
         versionName "0.9.1"
