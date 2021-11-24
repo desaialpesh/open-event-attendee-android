@@ -80,8 +80,8 @@ class SettingsFragment : PreferenceFragmentCompat(), PreferenceChangeListener {
             timeZonePreference.getBoolean(LOCAL_TIMEZONE, false)
         )
 
-        preferenceScreen.findPreference<Preference>(getString(R.string.key_profile))?.isVisible =
-            profileViewModel.isLoggedIn()
+//        preferenceScreen.findPreference<Preference>(getString(R.string.key_profile))?.isVisible =
+//            profileViewModel.isLoggedIn()
         preferenceScreen.findPreference<Preference>(getString(R.string.key_change_password))?.isVisible =
             profileViewModel.isLoggedIn()
         preferenceScreen.findPreference<Preference>(getString(R.string.key_timezone_switch))?.isVisible =
@@ -126,7 +126,7 @@ class SettingsFragment : PreferenceFragmentCompat(), PreferenceChangeListener {
         }
 
         if (preference?.key == getString(R.string.key_profile)) {
-            showLogoutDialog()
+            //showLogoutDialog()
             return true
         }
         if (preference?.key == getString(R.string.key_change_password)) {

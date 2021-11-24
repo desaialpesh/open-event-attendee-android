@@ -21,6 +21,7 @@
 
         <Preference
             android:key="@string/key_profile"
+            app:isPreferenceVisible="false"
             android:title="@string/profile"
             app:iconSpaceReserved="false" />
 
