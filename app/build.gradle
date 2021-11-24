@@ -15,9 +15,10 @@ def PAYPAL_CLIENT_ID= System.getenv('PAYPAL_CLIENT_ID') ?: "YOUR_API_KEY"
 def LOCAL_KEY_PRESENT = project.hasProperty('SIGNING_KEY_FILE') && rootProject.file(SIGNING_KEY_FILE).exists()
 
 android {
-    dataBinding {
-        enabled = true
-    }
+    buildFeatures {
+
+    dataBinding = true
+}
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.eventyay.attendee"
